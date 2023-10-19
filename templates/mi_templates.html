@@ -1,0 +1,11 @@
+<!-- En ajedrez_app/templates/tablero.html -->
+<table border="1">
+    {% for fila in tablero_data %}
+        <tr>
+            {% for casilla in fila %}
+                <td>{{ casilla }}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</table>
+
